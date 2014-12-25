@@ -14,7 +14,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "term", "code", "gitk", "chat", "5", "6", "7", "8", "www" };
+static const char *tags[] = { "term", "code", "gitk", "chat", "music", "6", "vbox", "win", "www" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -24,6 +24,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
+	{ "VirtualBox", NULL,     NULL,       1 << 6,       False,       -1 },
 };
 
 /* layout(s) */
